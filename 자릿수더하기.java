@@ -9,11 +9,3 @@ class Solution {
       return answer;
   }
 }
-
-public class 자릿수더하기{
-  public static void main(String[] args) {
-    Solution so=new Solution();
-    so.solution(123);
-  }
-  
-}
