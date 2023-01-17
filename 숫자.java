@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 import java.util.Arrays;
 
 public class 숫자 {
@@ -21,4 +21,17 @@ public class 숫자 {
   
   }
   
+//다른사람 풀이 보기
+class Solution {
+    public static long[] solution(int x, int n) {
+        long[] answer = new long[n];
+        answer[0] = x;
 
+        for (int i = 1; i < n; i++) {
+            answer[i] = answer[i - 1] + x;
+        }
+
+        return answer;
+
+    }
+}

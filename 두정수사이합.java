@@ -15,3 +15,14 @@ public class 두정수사이합 {
     }
   
 }
+
+//다른사람 풀이 for문안에 삼항식을 넣음 
+class Solution {
+  public long solution(int a, int b) {
+      long answer = 0;
+      for (int i = ((a < b) ? a : b); i <= ((a < b) ? b : a); i++) 
+          answer += i;
+
+      return answer;
+  }
+}
